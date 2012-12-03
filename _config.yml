@@ -1,0 +1,61 @@
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+
+url: http://jeremyroman.github.com/
+title: Jeremy Roman
+subtitle: Ramblings and rhetoric. Nothing to see here; move along.
+author: Jeremy Roman
+simple_search: http://google.com/search
+
+# RSS / Email (optional) subscription links (change if using something like Feedburner)
+subscribe_rss: /atom.xml
+subscribe_email:
+# RSS feeds can list your email address if you like
+email:
+
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
+
+# If publishing to a subdirectory as in http://site.com/project set 'root: /project'
+root: /
+port: 4000
+permalink: ':year/:month/:day/:title'
+markdown: rdiscount
+pygments: true
+
+paginate: 10 # Posts per page on the blog index
+recent_posts: 5 # Posts in the sidebar Recent Posts section
+
+exclude: .gitignore, Thorfile, README.md, Gemfile, Gemfile.lock, config.rb, CNAME
+
+# ----------------------- #
+#   3rd Party Settings    #
+# ----------------------- #
+
+# Twitter
+twitter_user:
+twitter_tweet_count: 4
+twitter_show_replies: false
+twitter_follow_button: true
+twitter_show_follower_count: false
+twitter_tweet_button: false
+
+# Google Plus
+google_plus_one: true
+google_plus_one_size: medium
+
+# Pinboard
+pinboard_user:
+pinboard_count: 3
+
+# Delicious
+delicious_user:
+delicious_count: 3
+
+# Disqus Comments
+disqus_short_name: jeremyroman
+
+# Google Analytics
+google_analytics_tracking_id:

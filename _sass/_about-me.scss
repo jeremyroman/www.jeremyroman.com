@@ -1,0 +1,36 @@
+@import "compass/css3/images";
+
+.about-me {
+  background-color: #eee;
+  @include background-image(linear-gradient(#f3f3f3, #eee));
+  border-bottom: 1px solid #bbb;
+
+  .photo {
+    background-image: url(../images/me.jpg);
+    height: 200px;
+  }
+
+  .text {
+    margin-top: 15px;
+  }
+
+  .quick-links {
+    margin-top: 40px;
+    font-size: 1.2em;
+
+    ul {
+      list-style-position: inside;
+      padding: 0;
+    }
+
+    li a {
+      position: relative;
+      top: -8px;
+    }
+
+    .resume      { list-style-image: url(../images/icons/website.png); }
+    .github      { list-style-image: url(../images/icons/github.png); }
+    .linkedin    { list-style-image: url(../images/icons/linkedin.png); }
+    .google-plus { list-style-image: url(../images/icons/google-plus.png); }
+  }
+}

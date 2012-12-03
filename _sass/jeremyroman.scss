@@ -1,0 +1,67 @@
+/*
+Theme Name: Jeremy Roman
+Theme URI: http://www.jeremyroman.com/
+Description: The theme for JeremyRoman.com.
+Author: Jeremy Roman
+Author URI: http://www.jeremyroman.com/
+.
+Nothing to see here, move along.
+.
+*/
+
+@import "compass/css3/border-radius";
+@import "syntax";
+@import "about-me";
+
+html, body {
+  background-color: #2e4c68;
+  color: #000;
+  margin-bottom: 1em;
+}
+
+header {
+  height: 128px;
+  background: #000 url(../images/banner.png) no-repeat top left;
+
+  a {
+    display: block;
+    width: 100%;
+    height: 128px;
+  }
+
+  h1 a span { display: none; }
+}
+
+.root.container {
+  background-color: #fff;
+  @include border-radius(1em);
+  padding-bottom: 0;
+}
+
+abbr {
+  border:0;
+}
+
+.content {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 1.8em;
+  font-weight: bold;
+
+  &:not(:first-child) {
+    border-top: 1px solid #bbb;
+    padding-top: 0.5em;
+  }
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+.footer {
+  margin-bottom: 0.5em;
+  text-align: center;
+}

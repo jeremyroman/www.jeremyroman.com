@@ -1,0 +1,8 @@
+---
+layout: post
+title: "Beta"
+date: 2011-07-26 21:31
+comments: true
+---
+
+hmmm beta

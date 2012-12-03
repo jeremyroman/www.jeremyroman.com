@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head profile="http://www.w3.org/2006/03/hcard">
+    <title>R&eacute;sum&eacute; &laquo; Jeremy Roman</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script type="text/javascript">
+      function generateEmail(obfuscated) {
+        email = "";
+        for(i=0; i<obfuscated.length; i++)
+          email += String.fromCharCode((i%2 == 0) ? obfuscated.charCodeAt(i)-1 : obfuscated.charCodeAt(i)+2);
+        return '<a href="mailto:' + email + '" class="email">' + email + '</a>';
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="body" class="vcard">
+      <img class="photo" src="photo.jpg" title="Jeremy Roman" alt="[ Photo ]" />
+
+      <h1 class="fn">Jeremy Roman</h1>
+      <p>Student, <a href="http://www.uwaterloo.ca">University of Waterloo</a></p>
+      <script type="text/javascript">document.write('<p class="sub">Email: '+generateEmail("kcscnwAhfpfkzppkbl/apk")+'</p>')</script>
+
+      <p class="files">
+        <a class="file file-pdf" href="resume.pdf">R&eacute;sum&eacute; (PDF)</a>
+        <a class="file file-html" href="resume.html">R&eacute;sum&eacute; (HTML)</a>
+      </p>
+
+      <a href="JeremyRoman.vcf" class="vcard-link"><img src="text_x_vcard.png" alt="[ vCard ]" title="vCard" /></a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{% capture about %}{% include about.md %}{% endcapture %}
+
+<div class="about-me container span-24">
+  <div class="photo span-8"></div>
+  <div class="span-12 loud text colborder">
+    {{ about | markdownify }}
+  </div>
+  <div class="span-3 last quick-links">
+    <ul>
+      <li class="resume"><a href="/resume/">R&eacute;sum&eacute;</a></li>
+      <li class="github"><a href="http://github.com/jeremyroman">GitHub</a></li>
+      <li class="linkedin"><a href="http://ca.linkedin.com/in/jeremyroman">LinkedIn</a></li>
+      <li class="google-plus"><a href="https://plus.google.com/116061356906695768373">Google+</a></li>
+    </ul>
+  </div>
+</div>

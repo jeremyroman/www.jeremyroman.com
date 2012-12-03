@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="{{ site.author }}">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    {% if page.description %}
+      <meta name="description" content="{{ page.description }}">
+    {% endif %}
+
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="{{ root_url }}/stylesheets/blueprint/screen.css">
+    <link rel="stylesheet" type="text/css" media="print" href="{{ root_url }}/stylesheets/blueprint/print.css">
+    <!--[if lt IE 8]>
+      <link rel="stylesheet" type="text/css" media="screen, projection" href="{{ root_url }}/stylesheets/blueprint/ie.css">
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="{{ root_url }}/stylesheets/jeremyroman.css">
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="openid.server" href="https://pip.verisignlabs.com/server">
+    <link rel="openid.delegate" href="http://jeremyroman.pip.verisignlabs.com">
+    <link rel="openid2.provider" href="https://pip.verisignlabs.com/server">
+    <link rel="openid2.local_id" href="http://jeremyroman.pip.verisignlabs.com">
+    <meta http-equiv="X-XRDS-Location" content="https://pip.verisignlabs.com/user/jeremyroman/yadisxrds">
+  </head>
+  <body>
+    <div class="root container">
+      <header class="span-24 last">
+        <h1><a href="{{ root_url }}/">
+            <span>{{ site.title }}</span>
+        </a></h1>
+      </header>
+
+      {% if page.url == "/index.html" %}
+        {% include about.html %}
+      {% endif %}
+
+      <div class="span-22 prepend-1 content">
+        {{ content | smart_quotes }}
+      </div>
+
+      <div class="span-24 footer quiet small">
+        {% if page.url == "/index.html" %}
+          <a href="http://paulrobertlloyd.com/2009/06/social_media_icons/">Social Media Icons</a> by Paul Robert Lloyd
+        {% endif %}
+      </div>
+    </div>
+  </body>
+</html>

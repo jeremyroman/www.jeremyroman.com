@@ -1,0 +1,111 @@
+body {
+  font:11px Verdana;
+  color:#555;
+  background:#f3f3f3;
+}
+
+#body {
+  background:#fff;
+  margin:64px auto auto;
+  padding:12px;
+  width:400px;
+  height:160px;
+  border:1px solid #d0d0d0;
+  border-radius:16px;
+  -webkit-border-radius:16px;
+  -moz-border-radius:16px;
+  position:relative;
+}
+
+img.photo {
+  float:left;
+  margin:0 1em 1em 0;
+  border-radius:8px;
+  -webkit-border-radius:8px;
+  -moz-border-radius:8px;
+}
+
+h1 {
+  font-family:"Trebuchet MS";
+  font-size:18px;
+  font-weight:normal;
+  margin:0;
+}
+
+p.sub {
+  margin:0.5em;
+}
+
+a {
+  color:#07f;
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+.files {
+  position:absolute;
+  right:30px;
+  bottom:2px;
+  width:210px;
+}
+
+.file {
+  background:#f5f5f5 no-repeat 2px 4px;
+  display:inline-block;
+  border:1px solid #d0d0d0;
+  width:210px;
+  margin:-1px;
+  padding:5px 6px 7px 12px;
+  border-radius:6px;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  margin-bottom:0;
+}
+
+.file-pdf {
+  border-radius:6px 6px 0 0;
+  -webkit-border-radius:6px 6px 0 0;
+  -moz-border-radius:6px 6px 0 0;
+}
+
+.file-html {
+  border-radius:0 0 6px 6px;
+  -webkit-border-radius:0 0 6px 6px;
+  -moz-border-radius:0 0 6px 6px;
+}
+
+/*.file-pdf {
+  background:#f5f5f5 url(application_pdf.png) no-repeat 1px;
+  width:174px;
+  padding-left:40px;
+}
+
+.file-pdf:after {
+  content:"(PDF)";
+}*/
+
+.file:hover {
+  background-color:#eee;
+  text-decoration:none;
+}
+
+.vcard-link {
+  position:absolute;
+  right:8px; top:8px;
+  opacity:0.6;
+  -moz-opacity:0.6;
+  -webkit-opacity:0.6;
+}
+
+.vcard-link:hover {
+  opacity:1.0;
+  -moz-opacity:1.0;
+  -webkit-opacity:1.0;
+}
+
+.vcard-link img {
+  border:0;
+}
