@@ -7,7 +7,8 @@ class BuildWebsite < Thor
 
   desc "build", "Generate the site"
   def build
-    system "bundle exec compass compile && bundle exec jekyll"
+    system "cd _sass && bundle exec compass compile"
+    system "bundle exec jekyll"
   end
 
   desc "watch", "Observe changes and update accordingly"
