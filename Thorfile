@@ -31,6 +31,13 @@ class BuildWebsite < Thor
     end
   end
 
+  desc "upload", "Upload to Google Storage"
+  def upload
+    shell.mute do
+      run "gsutil -m cp -a public-read -z html,css,vcf,js,pdf,xml -R _site/* gs://www.jeremyroman.com/"
+    end
+  end
+
   desc "clean", "Clean up temporary stuff"
   def clean
     run "rm -rf .sass-cache/**"
