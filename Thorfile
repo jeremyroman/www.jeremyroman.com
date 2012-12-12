@@ -45,7 +45,7 @@ class BuildWebsite < Thor
     @title = title
     today = Time.now.strftime("%Y-%m-%d")
     slug = title.downcase.gsub(/["'.!?]/, "").gsub(/[^a-z0-9]+/, "-").gsub(/^-+|-+$/, "")
-    filename = "posts/#{today}-#{slug}.md"
+    filename = "_posts/#{today}-#{slug}.md"
 
     template "post.md", filename
 
