@@ -20,11 +20,11 @@ language. I referred to it more than once while building this.
 
 First, a brief overview of Brainfuck is in order. Brainfuck is a ridiculously
 minimal programming language, which is nonetheless Turing-complete. In
-Brainfuck, there 8 instructions, each one character long. All other characters
-in the program source are ignored. The program has a data array consisting of
-30,000 cells (typically one byte wide) and a pointer into this array.
-Initially, all cells are zero and the pointer points to the first element of
-the array. The instructions are:
+Brainfuck, there are 8 instructions, each one character long. All other
+characters in the program source are ignored. The program has a data array
+consisting of 30,000 cells (typically one byte wide) and a pointer into this
+array.  Initially, all cells are zero and the pointer points to the first
+element of the array. The instructions are:
 
 Symbol | Effect
 ------ | ---------------------------
